@@ -2,4 +2,20 @@
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom"
+
+// import {setupServer} from "msw/node"
+// import {handlers} from "./mocks/handlers"
+// const server = setupServer(...handlers)
+// import {server} from "./mocks/server.ts"
+// import {TextEncoder, TextDecoder} from "text-encoding"
+
+// globalThis.TextEncoder = TextEncoder
+// globalThis.TextDecoder = TextDecoder
+
+// beforeAll(() => server.listen())
+// afterEach(() => server.resetHandlers())
+// afterAll(() => server.close())
+
+
+

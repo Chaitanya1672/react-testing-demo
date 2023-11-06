@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import "./App.css"
+
+import {Counter} from "./components/counter/Counter.tsx"
+import {Application} from "./components/greet/application/Application"
+import {AppProviders} from "./providers/AppProvider.tsx"
+import {Skills} from "./components/skills/Skills"
+import {MuiMode} from "./components/mui-mode/MuiMode"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppProviders>
+      <div className="App">
+        {/* <Application />     */}
+        {/* <Skills skills={['HTML', 'CSS']} /> */}
+        <Counter />
+        {/* <MuiMode /> */}
+      </div>
+    </AppProviders>
+  )
 }
 
-export default App;
+export default App
